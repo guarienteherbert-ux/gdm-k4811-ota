@@ -2,21 +2,23 @@
 
 Apps da suíte GDM e ROMs comunidade GDM para a central K4811, lidos pelo app **GDM Atualizações** (procura uma vez por semana).
 
-Última publicação: [ota-2026.11.12-1848](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/tag/ota-2026.11.12-1848)
+Última publicação: [ota-2026.11.17-2117](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/tag/ota-2026.11.17-2117)
 
 ## Apps
 
 | App | Versão | Pacote | Baixar |
 |---|---|---|---|
-| K4811 | 2.1.3 | `com.garagemdomadeira.nwd.launcher` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.12-1848/com.garagemdomadeira.nwd.launcher-20271300.apk) |
-| GDM Atualizações | 1.4 | `com.garagemdomadeira.nwd.updater` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.12-1848/com.garagemdomadeira.nwd.updater-5.apk) |
-| Música | 2.1.4 | `com.nwd.android.music.ui` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.12-1848/com.nwd.android.music.ui-20271400.apk) |
-| Telefone | 2.1.4 | `com.nwd.android.phone` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.12-1848/com.nwd.android.phone-20271400.apk) |
-| Equalizador | 2.1.3 | `com.nwd.audioset` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.12-1848/com.nwd.audioset-20271300.apk) |
-| Música BT | 2.1.4 | `com.nwd.bt.music` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.12-1848/com.nwd.bt.music-20271400.apk) |
-| Configurações | 2.1.3 | `com.nwd.car.setting` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.12-1848/com.nwd.car.setting-20271300.apk) |
-| Clima | 2.1.4 | `com.nwd.climate` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.12-1848/com.nwd.climate-20271400.apk) |
-| Rádio | 2.1.4 | `com.nwd.radio` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.12-1848/com.nwd.radio-20271400.apk) |
+| K4811 | 2.1.3 | `com.garagemdomadeira.nwd.launcher` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.garagemdomadeira.nwd.launcher-20271300.apk) |
+| GDM Atualizações | 1.4 | `com.garagemdomadeira.nwd.updater` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.garagemdomadeira.nwd.updater-5.apk) |
+| Música | 2.1.4 | `com.nwd.android.music.ui` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.nwd.android.music.ui-20271400.apk) |
+| Telefone | 2.1.4 | `com.nwd.android.phone` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.nwd.android.phone-20271400.apk) |
+| Equalizador | 2.1.3 | `com.nwd.audioset` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.nwd.audioset-20271300.apk) |
+| Música BT | 2.1.4 | `com.nwd.bt.music` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.nwd.bt.music-20271400.apk) |
+| Configurações | 2.1.3 | `com.nwd.car.setting` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.nwd.car.setting-20271300.apk) |
+| Clima | 2.1.4 | `com.nwd.climate` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.nwd.climate-20271400.apk) |
+| Ventoinha | 2.1.3 | `com.nwd.cpumonitor` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.nwd.cpumonitor-20271300.apk) |
+| Rádio | 2.1.4 | `com.nwd.radio` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.nwd.radio-20271400.apk) |
+| ZLINK | 6.2.0-uNFuSeD | `com.zjinnova.zlink` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.17-2117/com.zjinnova.zlink-600200.apk) |
 
 ## ROMs
 
