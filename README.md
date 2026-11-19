@@ -2,29 +2,29 @@
 
 Apps da suíte GDM e ROMs comunidade GDM para a central K4811, lidos pelo app **GDM Atualizações** (procura uma vez por semana).
 
-Última publicação: [ota-2026.11.18-2133](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/tag/ota-2026.11.18-2133)
+Última publicação: [ota-2026.11.18-2243](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/tag/ota-2026.11.18-2243)
 
 ## Apps
 
 | App | Versão | Pacote | Baixar |
 |---|---|---|---|
-| K4811 | 2.1.4 | `com.garagemdomadeira.nwd.launcher` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.garagemdomadeira.nwd.launcher-20271400.apk) |
-| GDM Atualizações | 1.5 | `com.garagemdomadeira.nwd.updater` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.garagemdomadeira.nwd.updater-6.apk) |
-| Música | 2.1.4 | `com.nwd.android.music.ui` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.nwd.android.music.ui-20271400.apk) |
-| Telefone | 2.1.4 | `com.nwd.android.phone` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.nwd.android.phone-20271400.apk) |
-| Equalizador | 2.1.3 | `com.nwd.audioset` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.nwd.audioset-20271300.apk) |
-| Música BT | 2.1.4 | `com.nwd.bt.music` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.nwd.bt.music-20271400.apk) |
-| Configurações | 2.1.3 | `com.nwd.car.setting` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.nwd.car.setting-20271300.apk) |
-| Clima | 2.1.4 | `com.nwd.climate` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.nwd.climate-20271400.apk) |
-| Ventoinha | 2.1.3 | `com.nwd.cpumonitor` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.nwd.cpumonitor-20271300.apk) |
-| Rádio | 2.1.4 | `com.nwd.radio` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.nwd.radio-20271400.apk) |
-| ZLINK | 6.2.0-uNFuSeD | `com.zjinnova.zlink` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2133/com.zjinnova.zlink-600200.apk) |
+| K4811 | 2.1.4 | `com.garagemdomadeira.nwd.launcher` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.garagemdomadeira.nwd.launcher-20271400.apk) |
+| GDM Atualizações | 1.5 | `com.garagemdomadeira.nwd.updater` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.garagemdomadeira.nwd.updater-6.apk) |
+| Música | 2.1.4 | `com.nwd.android.music.ui` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.nwd.android.music.ui-20271400.apk) |
+| Telefone | 2.1.4 | `com.nwd.android.phone` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.nwd.android.phone-20271400.apk) |
+| Equalizador | 2.1.3 | `com.nwd.audioset` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.nwd.audioset-20271300.apk) |
+| Música BT | 2.1.4 | `com.nwd.bt.music` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.nwd.bt.music-20271400.apk) |
+| Configurações | 2.1.3 | `com.nwd.car.setting` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.nwd.car.setting-20271300.apk) |
+| Clima | 2.1.4 | `com.nwd.climate` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.nwd.climate-20271400.apk) |
+| Ventoinha | 2.1.3 | `com.nwd.cpumonitor` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.nwd.cpumonitor-20271300.apk) |
+| Rádio | 2.1.4 | `com.nwd.radio` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.nwd.radio-20271400.apk) |
+| ZLINK | 6.2.0-uNFuSeD | `com.zjinnova.zlink` | [APK](https://github.com/guarienteherbert-ux/gdm-k4811-ota/releases/download/ota-2026.11.18-2243/com.zjinnova.zlink-600200.apk) |
 
 ## ROMs
 
 | Canal | Versão | Baixar |
 |---|---|---|
-| gdm | 5 | [ROM](https://drive.usercontent.google.com/download?id=1khfSKfslk3Tghnu9B0m0jum7p0Ilb4YZ&export=download&confirm=t) |
+| gdm | 6 | [ROM](https://drive.usercontent.google.com/download?id=1g7wJYQ6DSeW7lPmNFd4wU3Stm3uZKdg4&export=download&confirm=t) |
 | gdm-kanup | v1 | [ROM](https://drive.usercontent.google.com/download?id=1LQTHbqLomHWS1MeS85nGASzSWQFJa3Zr&export=download&confirm=t) |
 | gdm-vertical | 7 | [ROM](https://drive.usercontent.google.com/download?id=1-8MQ8BAoN7vhRefaj8rpLkyyFIjyMB1d&export=download&confirm=t) |
 
