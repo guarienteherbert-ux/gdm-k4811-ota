@@ -1,0 +1,103 @@
+# Base de radares do GDM (OpenStreetMap, ODbL, © colaboradores do OpenStreetMap), gerada aqui no GitHub uma vez
+# por semana: as centrais baixam releases/download/radares/radares-br.csv.gz sozinhas, sem depender de nenhum computador.
+name: Base de radares
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'      # toda segunda, 06:00 UTC (03:00 em Brasília)
+  workflow_dispatch:          # e quando rodar à mão (aba Actions)
+
+permissions:
+  contents: write             # publicar o arquivo na release "radares"
+  actions: write              # se o prazo acabar, agendar a continuação
+
+concurrency:
+  group: radares
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # OpenStreetMap do Brasil inteiro num arquivo (Geofabrik, atualizado todo dia, ~2 GB): fica só no disco deste
+      # computador temporário do GitHub; o que sobe é a base pronta (~120 KB). Leva poucos minutos.
+      - name: Baixar o OpenStreetMap do Brasil (Geofabrik)
+        id: pbf
+        run: |
+          mkdir -p saida
+          pip install -q osmium
+          if curl -fsSL --retry 3 --retry-delay 30 -o brasil.osm.pbf \
+               https://download.geofabrik.de/south-america/brazil-latest.osm.pbf; then
+            ls -la brasil.osm.pbf
+            echo "ok=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "Geofabrik indisponível: usa o Overpass (estado por estado)"
+            echo "ok=0" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Gerar a base (arquivo do Geofabrik)
+        id: baixar
+        if: steps.pbf.outputs.ok == '1'
+        run: |
+          python3 -I tools/gera_radares.py --pbf brasil.osm.pbf saida/radares-br.csv.gz
+          echo "rc=0" >> "$GITHUB_OUTPUT"
+
+      # plano B (Overpass, lento): só se o Geofabrik falhar
+      - uses: actions/cache/restore@v4
+        if: steps.pbf.outputs.ok != '1'
+        with:
+          path: saida/por_estado
+          key: radares-${{ github.run_id }}
+          restore-keys: radares-
+
+      - name: Gerar a base (Overpass, plano B)
+        id: overpass
+        if: steps.pbf.outputs.ok != '1'
+        env:
+          RADARES_PRAZO_S: '14400'
+        run: |
+          find saida/por_estado -name '*.json' -mtime +6 -delete 2>/dev/null || true
+          set +e
+          python3 -I tools/gera_radares.py saida/radares-br.csv.gz
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          [ $rc -eq 0 ] || [ $rc -eq 3 ]
+
+      - uses: actions/cache/save@v4
+        if: always() && steps.pbf.outputs.ok != '1'
+        with:
+          path: saida/por_estado
+          key: radares-${{ github.run_id }}
+
+      - name: Continuar noutra execução
+        if: steps.overpass.outputs.rc == '3'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run radares.yml --repo "$GITHUB_REPOSITORY"
+
+      - name: Conferir
+        if: steps.baixar.outputs.rc == '0' || steps.overpass.outputs.rc == '0'
+        run: |
+          n=$(zcat saida/radares-br.csv.gz | grep -vc '^#')
+          echo "radares: $n"
+          # base muito pequena = algo deu errado (não publica por cima da boa)
+          test "$n" -gt 5000
+
+      - name: Publicar na release "radares"
+        if: steps.baixar.outputs.rc == '0' || steps.overpass.outputs.rc == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # pré-lançamento e --latest=false: a "release mais recente" tem de continuar sendo a da OTA (o HTG
+          # Atualizações lê releases/latest/download/ota.json)
+          gh release view radares >/dev/null 2>&1 || gh release create radares --prerelease --latest=false --title "Base de radares" \
+            --notes "Radares do Brasil (OpenStreetMap, ODbL, © colaboradores do OpenStreetMap). Gerada toda semana pelo GitHub Actions; o GDM baixa sozinho."
+          gh release upload radares saida/radares-br.csv.gz --clobber
+          echo "publicado: $(date -u +%F)"
