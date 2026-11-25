@@ -95,7 +95,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # pré-lançamento e --latest=false: a "release mais recente" tem de continuar sendo a da OTA (o HTG
+          # pré-lançamento e --latest=false: a "release mais recente" tem de continuar sendo a da OTA (o GDM
           # Atualizações lê releases/latest/download/ota.json)
           gh release view radares >/dev/null 2>&1 || gh release create radares --prerelease --latest=false --title "Base de radares" \
             --notes "Radares do Brasil (OpenStreetMap, ODbL, © colaboradores do OpenStreetMap). Gerada toda semana pelo GitHub Actions; o GDM baixa sozinho."
